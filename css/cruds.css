@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #222;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.main {
+    width: 80%;
+    margin: auto;
+    
+}
+header {
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+input {
+    width: 100%;
+    background: #111;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+input:focus {
+    transform: scale(1.1);
+    background-color: #000;
+}
+.groups input{
+    width: 20%;
+}
+#total {
+    background-color:  rgba(0, 255, 0, 0.5);
+    padding: 12px;
+    border-radius: 10px;
+}
+#total::before {
+    content: "Total: ";
+}
+button {
+    height: 30px;
+    background-color: rgb(172, 47, 255);
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 0, 221);
+    letter-spacing: 2px;
+}
+.buttons {
+    width: 100%;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.buttons button {
+    width: 40%;
+}
+#deleteAll {
+    margin: 20px 0;
+}
+table {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+th,td {
+    padding: 5px;
+}
+th {
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #111;
+    border-radius: 10px;
+}

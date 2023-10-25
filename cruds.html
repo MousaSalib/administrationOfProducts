@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/cruds.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>cruds</h1>
+            <p>adminstartion of products</p>
+        </header>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+           
+            <div class="groups">
+                 <input onkeyup="calc()" type="number" placeholder="price" class="" id="price">
+                 <input onkeyup="calc()" type="number" placeholder="taxes" id="taxes">
+                 <input onkeyup="calc()" type="number" placeholder="ads" id="ads">
+                 <input onkeyup="calc()" type="number" placeholder="discount" id="discount">
+                 <small id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <input type="text" onkeyup="searchTOrC(this.value) " placeholder="search" id="search">
+            <div class="buttons">
+                <button onclick="inputsearch(this.id)" id="searchtitle">Search By Title</button>
+                <button onclick="inputsearch(this.id)" id="searchcategory">Search By Category</button>
+            </div>
+            <div id="deleteAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="css/cruds.js"></script>
+</body>
+</html>
